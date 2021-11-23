@@ -17,10 +17,8 @@ from django.contrib import admin
 from django.urls import path
 from django.urls import include
 
-from intro import views   # to jest poprawne
-
 urlpatterns = [
     path('admin/', admin.site.urls),
-    # path('home/', views.index)   # tu ustawia się endpoint
-    path('home/', include('hello.urls'))
+    path('hello/', include('hello.urls')),
+    path('hello_app/', include('hello_app.urls')),
 ]
