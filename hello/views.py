@@ -22,7 +22,7 @@ def hello_view(request):
 
 
 def hello2_view(request):
-    return render(request, 'hello.html')
+    return render(request, 'hello/index.html')
 
 
 def adam_view(request):
@@ -42,7 +42,7 @@ def name_view(request, name):  # tu musi być taka sama zmienna jak w endpoincie
 def name_view2(request, name):  # funkcja do zabezpieczania przed wstrzykiwaniem kodu w urlu
     return render(
             request,
-            'name.html',
+            'hello/name.html',
             context={
                 'name_in_template': name
             }

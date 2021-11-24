@@ -1,0 +1,19 @@
+{% load static %}  <!-- tak static nie jest domyślnie wbudowany i trzeba go załadować na początku -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="{% static 'isitchristmas/css/style.css' %}">
+    <script src="{% static 'isitchristmas/js/script.js' %}"></script>
+</head>
+<body>
+    <!-- instrukcje warunkowe umieszcza się w poniższy sposób, używając języka szablonów -->
+    {% if is_it_christmas %}
+        <h1 style="color: red">TAK</h1>
+    <img src="{% static 'isitchristmas/cat_christ.jpg' %}">  <!-- tak używa się tagu static do załadowania pliku statycznego -->
+    {% else %}
+        <h1 style="color: blue">NIE</h1>
+    {% endif %}
+</body>
+</html>
