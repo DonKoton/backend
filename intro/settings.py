@@ -43,6 +43,7 @@ INSTALLED_APPS = [
     'fruits',
     'isitmonday',
     'totolotek',
+    'links',
 
 ]
 

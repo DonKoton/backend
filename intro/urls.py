@@ -25,4 +25,5 @@ urlpatterns = [
     path('fruits/', include('fruits.urls')),
     path('isitmonday/', include('isitmonday.urls')),
     path('totolotek/', include('totolotek.urls')),
+    path('links/', include('links.urls')),
 ]
