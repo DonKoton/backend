@@ -1,0 +1,17 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Monday?</title>
+    <link rel="stylesheet" href="{% static 'isitmonday/css/style.css' %}">
+</head>
+<body>
+    {% if is_it_monday %}
+        <h1 style="color: red">TAK</h1>
+        <img src="{% static 'isitmonday/mondays.jpg' %}">
+    {% else %}
+        <h1 style="color: darkblue">NIE</h1>
+    {% endif %}
+</body>
+</html>

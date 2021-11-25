@@ -15,6 +15,6 @@
 ### DEBUG = True - serwer deweloperski
 ### DEBUG = False - serwer produkcyjny
 
-# dalej - stworzyć folder templates i tam umieszczać foldery w formie szufladek i w nich szablony - pliki html
+# dalej - stworzyć folder templates i tam umieścić folder w formie szufladki, o nazwie takiej jak nazwa aplikacji, i w nim szablony - pliki html
 # dalej - stworzyć folder static i tam umieszczać foldery css i js z odpowiednimi plikami i w folderze static umieszczać obrazki i inne pliki statyczne
 

@@ -10,10 +10,9 @@ def index(request):
     day = now.day
 
     is_it_christmas = False
-    is_it_christmas = True
 
-    # if month == 12 and day == 25:
-    #     is_it_christmas = True
+    if month == 12 and day == 25:
+        is_it_christmas = True
 
     return render(
         request,

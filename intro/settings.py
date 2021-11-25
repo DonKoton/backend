@@ -41,6 +41,8 @@ INSTALLED_APPS = [
     'hello_app',
     'isitchristmas',
     'fruits',
+    'isitmonday',
+
 ]
 
 MIDDLEWARE = [
