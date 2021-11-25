@@ -23,5 +23,6 @@ urlpatterns = [
     path('hello_app/', include('hello_app.urls')),
     path('isitchristmas/', include('isitchristmas.urls')),
     path('fruits/', include('fruits.urls')),
-    path('isitmonday/', include('isitmonday.urls'))
+    path('isitmonday/', include('isitmonday.urls')),
+    path('totolotek/', include('totolotek.urls')),
 ]
