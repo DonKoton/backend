@@ -9,7 +9,7 @@ def index(request):
 
     return render(
         request,
-        'totolotek/index.html',
+        'totolotek/first.html',
         context={
             'totolotto': totolotto
         }

@@ -1,0 +1,11 @@
+{% extends 'inheritance/layout.html' %}
+
+{% block title %}
+<!--{{ block.super }} - jeśli layout ma między znacznikami title jakąś treść, to dzięki super treść rodzica nie zostanie nadpisana, ale zostanie zachowana -->
+Druga strona
+{% endblock %}
+
+{% block body %}
+Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet architecto at aut commodi consectetur eos expedita in nihil non nostrum omnis provident quidem quos reprehenderit sequi soluta ullam veritatis, voluptas.
+<p>Przejdź do strony <a href="{% url 'inheritance:first' %}">pierwszej</a>.</p>
+{% endblock %}

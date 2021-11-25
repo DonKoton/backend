@@ -16,7 +16,7 @@ def index(request):
 
     return render(
         request,
-        'isitmonday/index.html',
+        'isitmonday/first.html',
         context={
             'is_it_monday': is_it_monday
         }

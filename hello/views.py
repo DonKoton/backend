@@ -22,7 +22,7 @@ def hello_view(request):
 
 
 def hello2_view(request):
-    return render(request, 'hello/index.html')
+    return render(request, 'hello/first.html')
 
 
 def adam_view(request):

@@ -1,0 +1,10 @@
+{% extends 'inheritance/layout.html' %}
+
+{% block title %}
+Pierwsza strona
+{% endblock %}
+
+{% block body %}
+Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad aspernatur deleniti expedita illo, in ipsam itaque iure labore magni molestiae, molestias odit quaerat ratione reiciendis sit sunt suscipit voluptas voluptate?
+<p>Przejdź do strony <a href="{% url 'inheritance:second' %}">drugiej</a>.</p>
+{% endblock %}

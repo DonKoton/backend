@@ -44,6 +44,7 @@ INSTALLED_APPS = [
     'isitmonday',
     'totolotek',
     'links',
+    'inheritance',
 
 ]
 

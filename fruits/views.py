@@ -13,7 +13,7 @@ def index(request):
 
     return render(
         request,
-        'fruits/index.html',
+        'fruits/first.html',
         context={
             'fruits': fruits
         }
