@@ -45,6 +45,8 @@ INSTALLED_APPS = [
     'totolotek',
     'links',
     'inheritance',
+    'mem',
+    'new',
 
 ]
 

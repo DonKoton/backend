@@ -27,4 +27,6 @@ urlpatterns = [
     path('totolotek/', include('totolotek.urls')),
     path('links/', include('links.urls')),
     path('inheritance/', include('inheritance.urls')),
+    path('mem/', include('mem.urls')),
+    path('new/', include('new.urls')),
 ]
