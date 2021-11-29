@@ -47,6 +47,8 @@ INSTALLED_APPS = [
     'inheritance',
     'mem',
     'new',
+    'form_app',
+    'form_app2',
 
 ]
 

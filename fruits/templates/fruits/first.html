@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <ol>
+    {% for item in fruits %}   <!-- tak się tworzy pętle w języku szablonów -->
+        <li>{{ item }}</li>
+    {% endfor %}
+    </ol>
+
+{# komentarz jednolinijkowy #}
+{% comment %}
+    {% abc %}
+    komentarz wielolinijkowy
+{% endcomment %}
+
+
+    {# filtry #}
+    <p>{{ fruits }}</p>
+    <p>Długość listy: {{ fruits|length }}</p>
+    <p>Elementy listy rozdzielone przecinkami: {{ fruits|join:", " }}</p>   {# join #}
+
+    <p>{{ 4|add:2 }}</p>
+    <p>{{ fruits|length|add:2 }}</p>
+
+    <p>{{ fruit|upper }}</p>
+    <p>{{ fruit|capfirst }}</p>
+    <p>{{ fruit|cut:'a' }}</p>
+
+    <p>{{ text|safe }}</p> {# podmiana wartości zmiennej na język html #}
+
+
+    {# taki jakby enumerate #}
+    <ul>
+        {% for item in fruits %}
+            <li>{{ item }}</li>
+        {{ forloop }}
+        <div>
+        {{ forloop.counter0 }}
+        </div>
+        {% endfor %}
+    </ul>
+
+    {% comment %}
+    poprzez notację z kropką można odwołać się do:
+        1. atrybutów obiektu
+        2. indeksów
+        3. kluczy
+    {% endcomment %}
+
+    {# atrybut obiektu - jak w pythonie #}
+    {{ dog.name }}
+
+    {# indeks #}
+    {{ fruits.2 }}
+
+    {# klucz #}
+    {{ passenger.name }}
+
+</body>
+</html>
