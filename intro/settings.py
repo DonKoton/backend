@@ -38,7 +38,6 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'hello',
-    'hello_app',
     'isitchristmas',
     'fruits',
     'isitmonday',
@@ -51,6 +50,7 @@ INSTALLED_APPS = [
     'form_app2',
     'form_app3',
     'form_app4',
+    'form_app5',
 
 ]
 
