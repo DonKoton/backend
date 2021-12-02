@@ -18,3 +18,9 @@
 # dalej - stworzyć folder templates i tam umieścić folder w formie szufladki, o nazwie takiej jak nazwa aplikacji, i w nim szablony - pliki html
 # dalej - stworzyć folder static i tam umieszczać foldery css i js z odpowiednimi plikami i w folderze static umieszczać obrazki i inne pliki statyczne
 
+
+
+# ORM - SQL
+# migracje - 2 kroki:
+# 1. makemigrations
+# 2. migrate
