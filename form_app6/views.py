@@ -4,10 +4,12 @@ from django.shortcuts import redirect
 # from django.shortcuts import Http404
 
 from django.shortcuts import get_object_or_404
+from django.views.decorators.http import require_http_methods
 
 from form_app6.models import Task
 
 # Create your views here.
+
 
 def register(request):
 
@@ -35,6 +37,7 @@ def tasks_list(request):
             'tasks': tasks
         }
     )
+
 
 def update(request, task_id):
 
@@ -64,6 +67,7 @@ def update(request, task_id):
     )
 
 
+@require_http_methods(["POST"])  # jeśli będzie coś szło metodą inną niż POST, to automatycznie będzie odrzucane i nie wejdzie do funkcji - zabezpieczenie
 def delete(request, task_id):
 
     if request.method == "POST":
