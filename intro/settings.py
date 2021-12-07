@@ -55,6 +55,7 @@ INSTALLED_APPS = [
     'form_app7',
     'crud_template',
     'relations',
+    'form_app_advanced',
 
 ]
 

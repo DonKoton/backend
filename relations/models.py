@@ -13,10 +13,11 @@ class Capital(models.Model):
 
 class Country(models.Model):
     name = models.CharField(max_length=128)
-    capital = models.OneToOneField('Capital', on_delete=models.CASCADE) # 2 parametry obowiązkowe, przy usunięciu któregoś wpisu w jednej tabeli, w drugiej też jest usuwany powiązany wpis
+    capital = models.OneToOneField('Capital', on_delete=models.CASCADE)  # 2 parametry obowiązkowe, przy usunięciu któregoś wpisu w jednej tabeli, w drugiej też jest usuwany powiązany wpis
 
     def __str__(self):
         return self.name
+
 
 # one-to-many
 class Language(models.Model):
@@ -32,6 +33,7 @@ class Framework(models.Model):
 
     def __str__(self):
         return self.name
+
 
 # many-to-many
 class Movie(models.Model):
