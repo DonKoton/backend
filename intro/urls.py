@@ -38,4 +38,5 @@ urlpatterns = [
     path('crud_template/', include('crud_template.urls')),
     path('relations/', include('relations.urls')),
     path('form_app_advanced/', include('form_app_advanced.urls')),
+    path('view_app/', include('view_app.urls')),
 ]

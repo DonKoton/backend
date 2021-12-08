@@ -2,8 +2,10 @@
 
 from django import forms
 from django.forms.widgets import NumberInput
+from form_app_advanced.models import Message
 
 
+# formularz Django
 class ContactForm(forms.Form):
     CHOICES = [
         ("question", "Pytanie"),
@@ -17,3 +19,25 @@ class ContactForm(forms.Form):
     body = forms.CharField(widget=forms.Textarea(attrs={"rows": 5, "cols": 40}), label="Treść")  # pola formularza mają domyślne widżety, ale można je nadpisać
     date = forms.DateField(widget=NumberInput(attrs={"type": "date"}), label="Ulubiona data")  # widżety daty i czasu trzeba oddzielnie zaimportować
     time = forms.TimeField(widget=NumberInput(attrs={"type": "time"}), label="Ulubiona godzina")
+
+
+# formularz modelu
+class MessageForm(forms.ModelForm):
+    class Meta:
+        model = Message
+        fields = "__all__"  # wyświetla wszystkie pola
+        # exclude = ['body']  # wszystkie z wyjątkiem ...
+        labels = {
+            "name": "Imię",
+            "email": "Email",
+            "category": "Kategoria",
+            "subject": "Temat",
+            "body": "Treść",
+            "date": "Ulubiona data",
+            "time": "Ulubiona godzina",
+        }
+        widgets = {
+            "date": NumberInput(attrs={"type": "date"}),
+            "time": NumberInput(attrs={"type": "time"}),
+        }
+

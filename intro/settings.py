@@ -56,6 +56,7 @@ INSTALLED_APPS = [
     'crud_template',
     'relations',
     'form_app_advanced',
+    'view_app',
 
 ]
 

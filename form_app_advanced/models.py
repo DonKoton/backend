@@ -9,7 +9,7 @@ class Message(models.Model):
 
 
     name = models.CharField(max_length=128)
-    email = models.EmailField()
+    email = models.EmailField(unique=True)
     category = models.CharField(max_length=16, choices=CHOICES)  # dodawanie tych rzeczy pozwala się zabezpieczyć na poziomie Django
     subject = models.CharField(max_length=128)  # gdyby próbować robić niewłaściwe wpisy na poziomie bazy danych, to wszystko jest możliwe
     body = models.TextField()
