@@ -39,4 +39,6 @@ urlpatterns = [
     path('relations/', include('relations.urls')),
     path('form_app_advanced/', include('form_app_advanced.urls')),
     path('view_app/', include('view_app.urls')),
+    path('auth_app/', include('auth_app.urls')),
+    path('authentication/', include('authentication.urls')),
 ]

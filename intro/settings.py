@@ -57,6 +57,8 @@ INSTALLED_APPS = [
     'relations',
     'form_app_advanced',
     'view_app',
+    'auth_app',
+    'authentication',
 
 ]
 
